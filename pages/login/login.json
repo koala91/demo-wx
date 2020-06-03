@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "登录页面",
+  "usingComponents": {
+    "scroll-view": "/components/scroll-view/scroll-view"
+  }
+}

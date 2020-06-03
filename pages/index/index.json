@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "mp-dialog": "weui-miniprogram/dialog/dialog",
+    "mp-icon": "weui-miniprogram/icon/icon",
+    "scroll-view": "/components/scroll-view/scroll-view"
+  },
+  "navigationBarTitleText": "ui组件库"
+}

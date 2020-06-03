@@ -1,0 +1,11 @@
+
+
+<view class="" hover-class="none" hover-stop-propagation="false">
+  <button bindtap="fnAdd">+</button>
+  <button bindtap="fnReduce">-</button>
+  <view class="" hover-class="none" hover-stop-propagation="false">
+    num2:{{num2}}
+    num3: {{num3}}
+    num4: {{num4}}
+  </view>
+</view>

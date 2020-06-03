@@ -1,0 +1,18 @@
+<nav-bar navigateBack="true" class="nav-bar">
+  <view slot="center" class="nav-bar-title">{{title}}</view>
+</nav-bar>
+
+<scroll-view>
+  <view class="view-wrap">
+    <view class="num">
+      {{num}}
+    </view>
+    <calculate
+      bind:add="fnAdd"
+      bind:reduce="fnReduce"
+      num2="{{num}}"
+      >
+    </calculate>
+  </view>
+</scroll-view>
+

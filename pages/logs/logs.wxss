@@ -1,0 +1,14 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+.nav-bar-content .nav-bar-center_ellipsis .nav-bar-title{
+  color: black;
+}
+.nav-bar .nav-bar-content .nav-bar-left {
+  width: 194rpx;
+}

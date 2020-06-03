@@ -1,0 +1,42 @@
+<nav-bar class="nav-bar">
+  <view slot="center" class="nav-bar-title">{{title}}</view>
+</nav-bar>
+<!--index.wxml-->
+<scroll-view
+  scroll-y
+  cutHeight="96"
+  >
+  <view class="view-wrap">
+    <view class="container">
+      <view class="userinfo">
+        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+        <block wx:else>
+          <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </block>
+      </view>
+      <view class="usermotto">
+        <text class="user-motto">{{motto}}</text>
+      </view>
+      <mp-dialog title="test" show="{{isShowDialog}}" bindbuttontap="tapDialogButton" buttons="{{[{text: '取消'}, {text: '确认'}]}}">
+          <view>test content</view>
+      </mp-dialog>
+      <mp-icon type="field" icon="add" color="black" size="{{25}}"></mp-icon>
+      <mp-icon icon="add" color="black" size="{{25}}"></mp-icon>
+      <navigator url="/pages/page1/index" hover-class="none">page1</navigator>
+      <navigator url="../page2/index" hover-class="none">page2</navigator>
+      <navigator url="../logs/logs" class="">查看详情1</navigator>
+      <navigator url="/pages/logs/logs">查看详情2</navigator>
+      <navigator url="/pages/page3/index">加减法</navigator>
+      <navigator url="/pages/login/login">登录页</navigator>
+      <button bindtap="fnUserInfo">获取个人信息</button>
+      <button bindtap="fnGetSetting">获取用户的当前设置</button>
+      <button bindtap="fnOpenSetting">调起小程序设置界面</button>
+      <button bindtap="fnUserAddress">授权用户地址</button>
+      <button bindtap="FnAddress">用户的通讯地址</button>
+      <view class="" hover-class="none" hover-stop-propagation="false">
+        1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+      </view>
+    </view>
+  </view>
+</scroll-view>

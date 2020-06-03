@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "page2",
+  "usingComponents": {
+    "scroll-view": "/components/scroll-view/scroll-view",
+    "calculate": "/components/calculate/index"
+  }
+}

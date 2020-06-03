@@ -1,0 +1,7 @@
+.num{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60rpx;
+  font-size: 36rpx;
+}
