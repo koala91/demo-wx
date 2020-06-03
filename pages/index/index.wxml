@@ -37,6 +37,9 @@
       <view class="" hover-class="none" hover-stop-propagation="false">
         1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
       </view>
+      <view bindtap="FnLogin">
+        登录
+      </view>
     </view>
   </view>
 </scroll-view>

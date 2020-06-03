@@ -2,7 +2,7 @@ import Request from '../request'
 
 const req = new Request()
 
-const  customer = {
+const  account = {
   // 当前顾客
   current (data) {
     return req.get('/account/current', data)
@@ -13,4 +13,4 @@ const  customer = {
   }
 }
 
-export default customer
+export default account

@@ -60,6 +60,7 @@ button {
   border-radius: 0;
   border: none;
   margin: 0;
+  background: transparent;
 }
 
 button::after {

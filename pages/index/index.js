@@ -1,4 +1,3 @@
-import api from '../../api/index'
 import { checkAuth }  from '../../utils/util'
 // index.js
 // 获取应用实例
@@ -74,7 +73,8 @@ Page({
     })
   },
   fnUserInfo: function () {
-    api.customer.current().then(({res}) => {
+    console.log('global', global)
+    global.api.account.current().then(({res}) => {
       console.log('current-res', res)
     })
   },
@@ -120,5 +120,8 @@ Page({
         complete: () => {}
       })
     })
+  },
+  FnLogin: function () {
+    
   }
 })

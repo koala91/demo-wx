@@ -1,11 +1,15 @@
 const oConfig = require('./app.config')
+import api from './api/index'
 
-global.yhsd = global.yhsd || {}
-global.yhsd.YOU_API_URL = oConfig.you_api_url
-global.yhsd.API_URL = oConfig.api_url
-global.yhsd.SITE_ALIAS = oConfig.alias
-global.yhsd.SITE_ID = oConfig.shop.site_id
-global.yhsd.SESSION_TOKEN = ''
+global.api = api
+
+global.yhsd = {
+  YOU_API_URL: oConfig.you_api_url,
+  API_URL: oConfig.api_url,
+  SITE_ALIAS: oConfig.alias,
+  SITE_ID: oConfig.shop.site_id,
+  SESSION_TOKEN: ''
+}
 
 global.account = {}
 

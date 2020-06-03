@@ -1,4 +1,3 @@
-import api from '../../api/index'
 Page({
   data: {
     title: '登录页'
@@ -48,7 +47,7 @@ Page({
       account: '',
       password: ''
     }
-    api.customer.login(user).then(({data}) => {
+    global.api.account.login(user).then(({data}) => {
       console.log('user-res', data)
       if (data.account) {
         wx.switchTab({

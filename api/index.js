@@ -1,9 +1,9 @@
 import demo from './api/demo'
-import customer from './api/customer'
+import account from './api/account'
 
 const api = {
   demo,
-  customer
+  account
 }
 
 export default api

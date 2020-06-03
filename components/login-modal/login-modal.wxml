@@ -1,0 +1,13 @@
+<mask class="mask" show="{{show}}">
+  <view class="login-modal">
+    <image class="close-image" src='../../assets/icons/close_icon.svg' mode="aspectFit" bindtap='closeModal'></image>
+    <view class="header">
+      <view class="title">{{shopName}}</view>
+      <view class="content">部分功能需要登录后才能使用</view>
+    </view>
+    <button class="button" open-type='getUserInfo' bindgetuserinfo="getUserInfo">
+      <image src="../../assets/icons/wechat_icon.svg" mode="aspectFit"></image>
+      <text>微信登录</text>
+    </button>
+  </view>
+</mask>
