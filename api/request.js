@@ -48,7 +48,8 @@ class Request {
         data: data,
         header: {
           // 一般登录成功后给一个token
-          Authorization: `Token ${wx.getStorageSync('site_token')}`,
+          // Authorization: `Token ${wx.getStorageSync('site_token')}`,
+          token: wx.getStorageSync('token') || '',
           ...header
         },
         method: method,

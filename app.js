@@ -54,6 +54,7 @@ App({
     })
   },
   globalData: {
+    shopName: '测试登陆',
     userInfo: null,
     sysInfo: {},
     navBarHeight: 0,

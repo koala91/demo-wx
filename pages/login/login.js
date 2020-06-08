@@ -1,6 +1,7 @@
 Page({
   data: {
-    title: '登录页'
+    title: '登录页',
+    showLoginModal: false
   },
   // options(Object)
   onLoad: function (options) {
@@ -59,6 +60,11 @@ Page({
           icon: 'none'
         })
       }
+    })
+  },
+  authLogin: function () {
+    this.setData({
+      showLoginModal: true
     })
   }
 })

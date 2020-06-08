@@ -4,6 +4,9 @@
 
 <scroll-view>
   <view class="view-wrap">
-    <button bindtap="fnLogin">登录</button>
+    <button bindtap="fnLogin">账号密码登录</button>
+    <button bindtap="authLogin">小程序原生登录</button>
   </view>
 </scroll-view>
+
+<login-modal show="{{showLoginModal}}"></login-modal>
